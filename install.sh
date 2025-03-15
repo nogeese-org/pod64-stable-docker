@@ -24,4 +24,4 @@ bash scripts/flush.sh
 clear
 echo "This message was automaticly sent."
 echo "The system is ready to use."
-exit 1
+exit 0
