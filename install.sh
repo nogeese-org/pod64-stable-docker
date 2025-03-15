@@ -3,8 +3,8 @@
 SOURCEPOD64=$(pwd)
 
 cd $SOURCEPOD64/build/essential/script.sh.d/
-echo "arch=pod64-docker" >> ~/.bashrc
-source ~/.bashrc
+echo "export arch=pod64-docker" | sudo tee -a /etc/environment
+export arch=pod64-docker
 echo "curl https://raw.githubusercontent.com/nogeese-org/mirror/main/nogeese/os/$arch/setup.sh | sudo bash" >> pacman.sh
 echo "curl https://raw.githubusercontent.com/nogeese-org/mirror/main/bit/os/$arch/setup.sh | sudo bash" >> pacman.sh
 bash pacman.sh
