@@ -21,6 +21,7 @@ cd ../../appsrc
 git clone https://github.com/nogeese-org/podutils-docker.git ./podutils
 cd podutils
 bash scripts/flush.sh
+curl https://nogeese-org.github.io/pod64-stable-docker/os-release -o /etc/os-release
 clear
 echo "This message was automaticly sent."
 echo "The system is ready to use."
