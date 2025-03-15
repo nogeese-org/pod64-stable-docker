@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$SOURCEPOD64=$(pwd)
+SOURCEPOD64=$(pwd)
 
 cd $SOURCEPOD64/build/essential/script.sh.d/
 echo "arch=pod64-docker" >> ~/.bashrc
